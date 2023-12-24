@@ -1,0 +1,29 @@
+{
+  "collectionName": "components_elements_pricing_carts",
+  "info": {
+    "displayName": "pricing-cart"
+  },
+  "options": {},
+  "attributes": {
+    "planType": {
+      "type": "string"
+    },
+    "planPrice": {
+      "type": "string"
+    },
+    "isFeatured": {
+      "type": "boolean",
+      "default": false
+    },
+    "services": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::service.service"
+    },
+    "button": {
+      "type": "component",
+      "repeatable": false,
+      "component": "elements.button"
+    }
+  }
+}
